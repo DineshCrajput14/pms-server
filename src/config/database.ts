@@ -48,7 +48,7 @@ export const pgPool = new PgPool({
   database: env.DB.NAME,
   max: env.DB.CONNECTION_LIMIT,
   ssl: env.DB.SSL
-    ? { rejectUnauthorized: true }
+    ? { rejectUnauthorized: false }
     : undefined,
 });
 
