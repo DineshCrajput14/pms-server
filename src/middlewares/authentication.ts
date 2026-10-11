@@ -13,7 +13,7 @@ export interface AuthRequest extends Request {
 }
 
 export function authenticate(
-  req: AuthRequest,
+  req: Request & AuthRequest,
   res: Response,
   next: NextFunction,
 ) {
