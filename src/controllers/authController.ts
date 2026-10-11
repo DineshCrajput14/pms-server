@@ -55,6 +55,10 @@ export async function login(req: Request, res: Response) {
       { expiresIn: "1h" },
     );
 
+    console.log("LOGIN: User found and password matched");
+console.log("LOGIN: JWT token generated:", Boolean(token));
+console.log("LOGIN: Organization lookup starting");
+
     const organization = await getPrimaryOrganization();
 
     return sendSuccess(res, HTTP_STATUS.OK, "", {
