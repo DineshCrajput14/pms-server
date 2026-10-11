@@ -11,7 +11,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node16",
-    "types": ["node", "express"]
+    "types": ["node"]
   },
   "include": ["src/**/*"]
 }
